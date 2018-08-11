@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 struct person {
-	char *name;
+	const char *name;
 	int age;
-	char *work;
+	const char *work;
 
 	void printInfo(void)
 	{

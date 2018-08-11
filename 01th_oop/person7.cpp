@@ -1,11 +1,18 @@
 
 #include <stdio.h>
 
-class person {
+class Person {
 public:
 	const char *name;
 	int age;
 	const char *work;
+
+	Person(const char *n, int a, const char *w) 
+	{
+		name = n;
+		age = a;
+		work = w;
+	}
 
 	void printInfo(void)
 	{
@@ -15,13 +22,11 @@ public:
 
 int main(int argc, char **argv)
 {
-	struct person persons[] = {
-		{"zhangsan", 10, "teacher"},
-		{"lisi", 16, "doctor"},
-	};
-	
-	persons[0].printInfo();
-	persons[1].printInfo();
+
+	Person p1("zhangsan", 10, "teacher");
+	Person p2("lisi", 16, "worker");
+	p1.printInfo();
+	p2.printInfo();
 	
 	return 0;
 }
