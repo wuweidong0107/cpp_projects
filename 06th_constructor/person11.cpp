@@ -95,7 +95,7 @@ public:
 		cout<<"Student()"<<endl;
 	}
 
-	Student(int id, char *father, char *mother, int father_age = 40, int mother_age = 39) : mother(mother, mother_age), father(father, father_age)
+	Student(int id, char *f_name, char *m_name, int f_age = 40, int m_age = 39) : mother(m_name, m_age), father(f_name, f_age)
 	{
 		cout<<"Student(int id, char *father, char *mother, int father_age = 40, int mother_age = 39)"<<endl;
 	}
